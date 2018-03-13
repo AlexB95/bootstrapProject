@@ -1,5 +1,5 @@
 <div style="margin-top: -55px">
-    <div id="myCarousel" class="carousel slide m-5 w-85" data-ride="carousel" style="background-color: black;">
+    <div id="myCarousel" class="carousel slide mt-5 w-100" data-ride="carousel" style="background-color: black;">
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -7,24 +7,25 @@
             <li data-target="#myCarousel" data-slide-to="3"></li>
         </ol>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="first-slide" src="images/Capturas_sistema_Montrer/1.PNG" style="margin-top:-45px" width="100%" alt="GG">
+            <div class="carousel-item active align-middle">
+                <img class="first-slide" src="images/Capturas_sistema_Montrer/1.PNG" style="margin-top:-45px" width="100%" alt="LogIn">
                 <div class="container">
-                    <div class="carousel-caption text-center">
-                        <h1 class="text-dark">Proyecto Creando Redes Culturales.</h1>
-                        <p>Este proyecto permite al programa FICM Presenta tener información sobre contactos
-                            con las comunidades que son principalmente pertenecientes a la ciudad de Pátzcuaro.</p>
+                    <div class="carousel-caption align-middle text-center bg-light">
+                        <h1 class="text-dark ">Sistema de Evaluación Docente.</h1>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="second-slide" src="images/Capturas_sistema_Montrer/2.PNG" style="margin-top:-45px" width="100%" alt="Second slide">
+                <img class="second-slide" src="images/Capturas_sistema_Montrer/2.PNG" style="margin-top:-45px" width="100%" alt="Dashboard Alumno">
             </div>
             <div class="carousel-item">
-                <img class="third-slide" src="images/Capturas_sistema_Montrer/3.PNG" style="margin-top:-45px" width="100%" alt="Third slide">
+                <img class="third-slide" src="images/Capturas_sistema_Montrer/3.PNG" style="margin-top:-45px" width="100%" alt="Preguntas Alumno">
             </div>
             <div class="carousel-item">
-                <img class="fourth-slide" src="images/Capturas_sistema_Montrer/4.PNG" style="margin-top:-45px" width="100%" alt="Third slide">
+                <img class="fourth-slide" src="images/Capturas_sistema_Montrer/5.PNG" style="margin-top:-45px" width="100%" alt="Admin dashboard">
+            </div>
+            <div class="carousel-item">
+                <img class="fifth-slide" src="images/Capturas_sistema_Montrer/6.PNG" style="margin-top:-45px" width="100%" alt="Admin dbAlumnos">
             </div>
         </div>
         <a class="carousel-control-prev" data-target="#myCarousel" role="button" data-slide="prev">
@@ -35,5 +36,51 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
+    </div>
+</div>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container p-5">
+        <h1>Sistema de Evaluación Docente de la Universidad Montrer</h1>
+        <p>La universidad Montrer hacía un año manejaba un sistema de evaluación docente presencial, en el cual los Directores
+            de área de cada materia llenaban a mano en un documento de Excel los datos de materias, profesores y grupos,
+            esto se hacía muy tardado, por lo que se solicitó hacer un sistema que automatizara todo esto.
+        </p>
+        <p>A nosotros como estudiantes de Ingeniaría de Software en la materia de desarrollo ágil se nos encargó la realizción
+            del proyecto, al finalizar el tiempo de entrega se subió el sistema desarrollado a un servidor que las personas
+            de la universidad Montrer rentan para administrar su sitio web, al subirse hubo pequeños inconvenientes de compativilidad
+            que se solucionaron sin retrasar la entrega, al momento de utilizar el sistema por primera vez se obtuvo una
+            aprovación de que el sistema cumplia los requerimientos solicitados.
+        </p>
+        <p>
+            A continuación se puede ver la página del sistema para una mejor visualización, sin embargo como es un sistema cuyas credenciales
+            de acceso son privadas no se puede tener acceso a todo el sistema, únicamente se puede apreciar el LogIn para
+            ver el diseño del sitio.
+        </p>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uniMontrer">
+            Ver sitio
+        </button>
+    </div>
+</div>
+<div class="modal fade" id="uniMontrer">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h4 class="modal-title">Sistema de Evaluación Docente de la Universidad Montrer</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <iframe class="embed-responsive-item w-100" src="http://unimontrer.edu.mx/encuestas/" height="300" frameborder="0" style="border:0"
+                    allowfullscreen></iframe>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+            </div>
+
+        </div>
     </div>
 </div>

@@ -16,6 +16,10 @@ app.config(function ($routeProvider) {
       controller: "projectController",
       templateUrl: "templates/ficm.html"
     })
+    .when("/hobbies", {
+      controller: "hobbiesController",
+      templateUrl: "templates/hobbies.html"
+    })
     .otherwise("/");
 });
 
@@ -45,8 +49,8 @@ app.controller("navbarController", function ($location, $scope) {
   };
 });
 
-app.controller("detalleController", function ($scope, $http, $routeParams) {
-
-  $scope.parametroUrl = $routeParams.nameHola;
-
+app.controller("hobbiesController", function ($location, $scope) {
+  $scope.isActive = function (route) {
+    return route === $location.path();
+  };
 });
