@@ -1,20 +1,17 @@
 <div class="row container-fluid" ng-controller="academicController">
   <div class="col-3 col-md-2">
     <div class="container">
-    <ul class="nav flex-column fixed-top" style="margin-top:70px">
-      <li class="nav-item">
-        <a class="nav-link" href=""
-        ng-click="scrollTo('secundaria')">Secundaria</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href=""
-        ng-click="scrollTo('preparatoria')">Preparatoria</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href=""
-        ng-click="scrollTo('universidad')">Universidad</a>
-      </li>
-    </ul>
+      <ul class="nav flex-column fixed-top" style="margin-top:70px">
+        <li class="nav-item">
+          <a class="nav-link" href="" ng-click="scrollTo('secundaria')">Secundaria</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="" ng-click="scrollTo('preparatoria')">Preparatoria</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="" ng-click="scrollTo('universidad')">Universidad</a>
+        </li>
+      </ul>
     </div>
   </div>
   <div class="col-9 col-md-10 container-fluid">
@@ -25,16 +22,25 @@
           <div class="row">
             <div class="col-md-6 ">
               <div class="card-block p-4">
-                <h4 class="card-title">Curabitur gravida vestibulum imperdiet.</h4>
-                <p class="card-text">Cras convallis ut turpis vitae facilisis. Morbi eu augue vel quam efficitur rhoncus vitae eget lectus. Cras augue ligula, aliquam ut enim ut, feugiat imperdiet sem. Integer sed mi quis nisl eleifend interdum.</p>
-                <p class="card-text">Cras convallis ut turpis vitae facilisis. Morbi eu augue vel quam efficitur rhoncus vitae eget lectus. Cras augue ligula, aliquam ut enim ut, feugiat imperdiet sem.</p>
-                <a href="#" class="btn btn-primary">Read More</a>
+                <h4 class="card-title">Escuela Secundaria Técnica N° 4.</h4>
+                <p class="card-text">El Colegio Escuela Secundaria Técnica N° 4 es una Escuela Secundaria situada en la localidad de Pátzcuaro.
+                  Imparte educación básica (Secundaria Técnica), y es de control público.</p>
+                <p class="card-text">En esta institución yo estudie la especialidad de computación, siendo esta especialidad la que me adentraría
+                  más de lo que estaba en el mundo de la computación.
+                </p>
+                <button data-toggle="collapse" data-target="#mapEti" class="btn btn-primary">Ubicar</button>
               </div>
             </div>
             <div class="col-md-6">
               <div class="card-img-bottom p-4">
                 <img class="rounded img-fluid" src="images/eti.jpg" alt="">
               </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 p-4 collapse" id="mapEti">
+              <iframe class="embed-responsive-item w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13018.851677203924!2d-101.61320909923477!3d19.526958936253152!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa4a896f71774cb36!2sEscuela+Secundaria+T%C3%A9cnica+N%C2%B04!5e0!3m2!1ses-419!2smx!4v1520920358751"
+                height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -47,16 +53,28 @@
           <div class="row">
             <div class="col-md-6 ">
               <div class="card-block p-4">
-                <h4 class="card-title">Curabitur gravida vestibulum imperdiet.</h4>
-                <p class="card-text">Cras convallis ut turpis vitae facilisis. Morbi eu augue vel quam efficitur rhoncus vitae eget lectus. Cras augue ligula, aliquam ut enim ut, feugiat imperdiet sem. Integer sed mi quis nisl eleifend interdum.</p>
-                <p class="card-text">Cras convallis ut turpis vitae facilisis. Morbi eu augue vel quam efficitur rhoncus vitae eget lectus. Cras augue ligula, aliquam ut enim ut, feugiat imperdiet sem.</p>
-                <a href="#" class="btn btn-primary">Read More</a>
+                <h4 class="card-title">C.B.T.i.S. 94</h4>
+                <p class="card-text">El CBTis no. 94, ubicado en la calle Periodista Roberto Pita Cornejo número 17, 
+                  Colonia Emiliano Zapata, en Pátzcuaro, Michoacán, desde hace 38 años de servicio, es una institución 
+                  formadora de Técnicos Bachilleres, con la responsabilidad de mejorar la calidad educativa, educar para el 
+                  cuidado del medio ambiente, para un desarrollo integral de los estudiantes. 
+                  </p>
+                <p class="card-text">Somos una Institución de Servicios Educativos dependiente de la Unidad de Educación Media Superior 
+                    Tecnológica Industrial y de Servicios (UEMSTIS), que a su vez depende de la Subsecretaría de Educación 
+                    Media Superior. (SEMS).</p>
+                <button data-toggle="collapse" data-target="#mapCBTis" class="btn btn-primary">Ubicar</button>
               </div>
             </div>
             <div class="col-md-6">
               <div class="card-img-bottom p-4">
                 <img class="rounded img-fluid" src="images/DGETI_logo.png" alt="">
               </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 p-4 collapse" id="mapCBTis">
+                <iframe class="embed-responsive-item w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.349208690674!2d-101.61396328552394!3d19.526615686830944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842de26ad6d24565%3A0xdf6074790ba3ed5e!2sSEP+CBTIS+94!5e0!3m2!1ses-419!2smx!4v1520921070489"
+                height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -69,16 +87,28 @@
           <div class="row">
             <div class="col-md-6 ">
               <div class="card-block p-4">
-                <h4 class="card-title">Curabitur gravida vestibulum imperdiet.</h4>
-                <p class="card-text">Cras convallis ut turpis vitae facilisis. Morbi eu augue vel quam efficitur rhoncus vitae eget lectus. Cras augue ligula, aliquam ut enim ut, feugiat imperdiet sem. Integer sed mi quis nisl eleifend interdum.</p>
-                <p class="card-text">Cras convallis ut turpis vitae facilisis. Morbi eu augue vel quam efficitur rhoncus vitae eget lectus. Cras augue ligula, aliquam ut enim ut, feugiat imperdiet sem.</p>
-                <a href="#" class="btn btn-primary">Read More</a>
+                <h4 class="card-title">Instituto Tecnológico de Morelia.</h4>
+                <p class="card-text">Instituto Tecnológico de Morelia es una institución educativa pública de 
+                  educación superior, que forma parte del Sistema Nacional de Institutos Tecnológicos de México. 
+                  Ubicado en la Ciudad de Morelia, Michoacán esta institución educativa goza de un gran prestigio 
+                  y tradición en la región ocupa el primer lugar en el ranking de tecnológicos de alto desempeño.</p>
+                <p class="card-text">Actualmente me encuentro estudiando en esta institución la carrera de Ingeniería en Sistemas 
+                  Computacionales con especialidad en Ingeniería de Software, sin embargo ya he cursado todas 
+                  las materias presenciales y ahora realizo mis residencias profesionales.
+                </p>
+                <button data-toggle="collapse" data-target="#mapITM" class="btn btn-primary">Ubicar</button>
               </div>
             </div>
             <div class="col-md-6">
               <div class="card-img-bottom p-4">
                 <img class="rounded img-fluid" src="images/Itmorelia.png" alt="">
               </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 p-4 collapse" id="mapITM">
+                <iframe class="embed-responsive-item w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3755.7576712691607!2d-101.18800878552027!3d19.722938586720097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842d0e40be8f4d3b%3A0xf001c256ae856856!2sInstituto+Tecnol%C3%B3gico+de+Morelia!5e0!3m2!1ses-419!2smx!4v1520921229792"
+                height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
           </div>
         </div>
